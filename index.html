@@ -34,6 +34,9 @@
           alt=""
         >
         <div class="hero-overlay"></div>
+        <div class="hero-portrait" aria-hidden="true">
+          <img src="./assets/dmitry-portrait.jpg" alt="">
+        </div>
         <div class="hero-inner">
           <p class="eyebrow">Human Design · биоэнергетика · ретриты</p>
           <h1>Меня зовут Дмитрий Алёшин</h1>
@@ -81,15 +84,15 @@
         </div>
       </section>
 
-      <section class="section about-section">
+      <section class="section about-section" id="about">
         <div class="container about-grid">
           <div class="portrait-panel">
             <img
-              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80"
-              alt="Спокойное пространство для личной консультации"
+              src="./assets/dmitry-approach.jpg"
+              alt="Дмитрий Алёшин"
             >
             <div class="portrait-note">
-              <span>место под фото или видео Дмитрия</span>
+              <span>личная работа со вниманием к состоянию</span>
             </div>
           </div>
           <div class="content-stack">
@@ -239,22 +242,50 @@
 
       <section id="reviews" class="section reviews-section">
         <div class="container">
-          <div class="section-head">
-            <p class="section-label">Отзывы</p>
-            <h2>Люди часто приходят за ответами, а получают ощущение возвращения к себе</h2>
+          <div class="section-head reviews-head">
+            <div>
+              <p class="section-label">Отзывы</p>
+              <h2>Люди часто приходят за ответами, а получают ощущение возвращения к себе</h2>
+            </div>
+            <div class="review-controls" aria-label="Навигация по отзывам">
+              <button class="icon-btn" type="button" data-review-prev aria-label="Предыдущие отзывы">
+                <i data-lucide="arrow-left"></i>
+              </button>
+              <button class="icon-btn" type="button" data-review-next aria-label="Следующие отзывы">
+                <i data-lucide="arrow-right"></i>
+              </button>
+            </div>
           </div>
-          <div class="review-grid">
-            <figure>
-              <blockquote>«Каждый раз возвращаешь мне меня»</blockquote>
-              <figcaption>сильная фраза из отзывов</figcaption>
+          <div class="review-carousel" data-review-carousel tabindex="0" aria-label="Реальные отзывы клиентов">
+            <figure class="review-card">
+              <img src="./assets/reviews/review-01.jpg" alt="Отзыв клиента о работе Дмитрия">
             </figure>
-            <figure>
-              <blockquote>«Стало спокойнее, яснее, появилась опора»</blockquote>
-              <figcaption>после разборов и практик</figcaption>
+            <figure class="review-card">
+              <img src="./assets/reviews/review-02.jpg" alt="Отзыв клиента о чтении Human Design">
             </figure>
-            <figure>
-              <blockquote>«Тело откликается теплом, лёгкостью и расслаблением»</blockquote>
-              <figcaption>после энергетической работы</figcaption>
+            <figure class="review-card">
+              <img src="./assets/reviews/review-03.jpg" alt="Отзыв клиента после разбора">
+            </figure>
+            <figure class="review-card">
+              <img src="./assets/reviews/review-04.jpg" alt="Отзыв клиента после сессии">
+            </figure>
+            <figure class="review-card">
+              <img src="./assets/reviews/review-05.jpg" alt="Отзыв клиента о поддержке Дмитрия">
+            </figure>
+            <figure class="review-card">
+              <img src="./assets/reviews/review-06.jpg" alt="Отзыв клиента о консультации">
+            </figure>
+            <figure class="review-card">
+              <img src="./assets/reviews/review-07.jpg" alt="Отзыв клиента о результатах работы">
+            </figure>
+            <figure class="review-card">
+              <img src="./assets/reviews/review-08.jpg" alt="Отзыв клиента о толковании и разъяснении">
+            </figure>
+            <figure class="review-card">
+              <img src="./assets/reviews/review-09.jpg" alt="Отзыв клиента о поддержке">
+            </figure>
+            <figure class="review-card">
+              <img src="./assets/reviews/review-10.jpg" alt="Отзыв клиента о консультации Дмитрия">
             </figure>
           </div>
         </div>
