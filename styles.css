@@ -139,17 +139,24 @@ a {
   object-fit: cover;
 }
 
+.hero-bg {
+  z-index: 0;
+  object-position: center 62%;
+  filter: saturate(1.08) contrast(1.06) brightness(0.88);
+}
+
 .hero-overlay {
   position: absolute;
+  z-index: 1;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(15, 23, 20, 0.9), rgba(15, 23, 20, 0.62) 50%, rgba(15, 23, 20, 0.32)),
-    linear-gradient(0deg, rgba(15, 23, 20, 0.78), rgba(15, 23, 20, 0.06) 42%);
+    linear-gradient(90deg, rgba(15, 23, 20, 0.92) 0%, rgba(15, 23, 20, 0.74) 38%, rgba(15, 23, 20, 0.24) 68%, rgba(15, 23, 20, 0.08) 100%),
+    linear-gradient(0deg, rgba(15, 23, 20, 0.72), rgba(15, 23, 20, 0.02) 48%);
 }
 
 .hero-portrait {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   right: max(92px, calc((100vw - 1080px) / 2 - 18px));
   bottom: 250px;
   width: min(305px, 23vw);
@@ -183,7 +190,7 @@ a {
 
 .hero-inner {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   width: min(1160px, calc(100% - 40px));
   margin: 0 auto;
 }
